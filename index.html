@@ -1,128 +1,22 @@
 <!doctype html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#101111">
-  <title>Stopbullyn — Fuerza para ser tú</title>
-  <meta name="description" content="Ropa deportiva con carácter. Descubre los diseños de Stopbullyn para training, pádel y grappling. Entrena fuerte. Juega con respeto.">
-  <meta property="og:title" content="Stopbullyn — Fuerza para ser tú">
-  <meta property="og:description" content="Training, pádel y grappling. Ropa con actitud, dentro y fuera de la pista.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://ismael-sarmiento.github.io/stopbullyn/assets/images/original-01.jpg">
-  <meta property="og:url" content="https://ismael-sarmiento.github.io/stopbullyn/">
-  <link rel="icon" href="assets/images/brand-mark.webp" type="image/webp">
-  <link rel="preload" href="assets/fonts/barlow-condensed-900.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="assets/images/hero-lion.webp" as="image" fetchpriority="high">
-  <script>
-    try {
-      const theme = localStorage.getItem('stopbullyn-theme');
-      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
-    } catch (_) {}
-  </script>
-  <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/catalog.js" defer></script>
-  <script src="assets/i18n.js" defer></script>
-  <script src="assets/app.js" defer></script>
+  <meta name="robots" content="noindex">
+  <title>Stopbullying se ha mudado · demos.isuniverse.dev/stopbullying/</title>
+  <link rel="canonical" href="https://demos.isuniverse.dev/stopbullying/">
+  <!-- Old address of Stopbullying: shared links still arrive here, so this page stays. -->
+  <script>location.replace("https://demos.isuniverse.dev/stopbullying/" + location.pathname.replace(/^\/stopbullyn(?:\/|$)/, '') + location.search + location.hash);</script>
+  <meta http-equiv="refresh" content="0; url=https://demos.isuniverse.dev/stopbullying/">
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; box-sizing: border-box;
+      font: 17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="header-inner shell">
-      <a class="brand" href="#top" aria-label="Stopbullyn · Inicio" data-i18n-aria-label="home">
-        <img src="assets/images/brand-mark.webp" width="40" height="40" alt="">
-        <span>STOPBULLYN<span class="brand-dot">.</span></span>
-      </a>
-      <nav class="desktop-nav" aria-label="Principal" data-i18n-aria-label="navigation">
-        <a href="#collection" data-i18n="collection">Colección</a>
-        <a href="#attitude" data-i18n="attitude">Actitud</a>
-      </nav>
-      <div class="header-controls">
-        <button class="language-button" id="language-toggle" type="button" aria-label="Switch to English" lang="en"><span>EN</span></button>
-        <button class="icon-button theme-button" id="theme-toggle" type="button" aria-label="Activar modo claro" title="Activar modo claro">
-          <img class="icon theme-icon" src="assets/icons/sun.svg" width="20" height="20" alt="">
-        </button>
-        <button class="icon-button menu-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" data-i18n-aria-label="openMenu">
-          <img class="icon" src="assets/icons/list.svg" width="24" height="24" alt="">
-        </button>
-      </div>
-    </div>
-    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil" data-i18n-aria-label="mobileNavigation" hidden>
-      <a href="#collection" data-i18n="collection">Colección</a>
-      <a href="#attitude" data-i18n="attitude">Actitud</a>
-      <a href="#questions" data-i18n="questions">Preguntas frecuentes</a>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-background" aria-hidden="true"></div>
-      <div class="hero-inner shell">
-        <div class="hero-copy">
-          <p class="eyebrow hero-eyebrow" data-i18n="heroEyebrow">FUERZA · ACTITUD · RESPETO</p>
-          <h1 id="hero-title"><span data-i18n="heroLine1">FUERZA</span><span data-i18n="heroLine2">PARA</span><span class="accent" data-i18n="heroLine3">SER TÚ.</span></h1>
-          <p class="hero-description" data-i18n="heroDescription">Ropa deportiva con carácter. Entrena fuerte. Juega con respeto.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#collection"><span data-i18n="explore">Explorar colección</span><img src="assets/icons/arrow-up-right.svg" width="20" height="20" alt=""></a>
-            <a class="text-link" href="#attitude" data-i18n="ourAttitude">Nuestra actitud</a>
-          </div>
-        </div>
-        <div class="hero-showcase" id="hero-showcase">
-          <span class="hero-edition" aria-hidden="true">SB / 01</span>
-          <button class="hero-garment" type="button" data-open="lion-tee" aria-label="Ver el diseño León" data-i18n-aria-label="viewLion">
-            <img class="hero-shirt" src="assets/images/hero-lion.webp" width="1000" height="1167" fetchpriority="high" alt="Camiseta negra con león y estampado Stop Bullying azul y amarillo" data-i18n-alt="heroAlt">
-          </button>
-          <div class="hero-caption"><span data-i18n="lionCaption">LEÓN / TRAINING</span><button class="detail-link" type="button" data-open="lion-tee"><span data-i18n="viewOriginal">Ver diseño original</span><img class="icon" src="assets/icons/arrow-up-right.svg" width="17" height="17" alt=""></button></div>
-        </div>
-      </div>
-      <div class="sport-strip"><div class="shell sport-strip-inner"><a href="#collection" data-category="training">TRAINING</a><span aria-hidden="true">/</span><a href="#collection" data-category="padel" data-i18n="padelSport">PÁDEL</a><span aria-hidden="true">/</span><a href="#collection" data-category="grappling">GRAPPLING</a><span class="strip-note" data-i18n="stripNote">MISMA FUERZA. TU PROPIO CAMINO.</span></div></div>
-    </section>
-
-    <section class="collection section shell" id="collection" aria-labelledby="collection-title">
-      <div class="section-heading">
-        <div><p class="eyebrow" data-i18n="collectionEyebrow">LA COLECCIÓN</p><h2 id="collection-title"><span data-i18n="collectionLine1">ELIGE TU</span> <span class="accent" data-i18n="collectionLine2">TERRENO.</span></h2></div>
-        <p class="section-intro" data-i18n="collectionIntro">Diseños que hablan por ti. Encuentra el que va con tu forma de entrenar.</p>
-      </div>
-      <div class="collection-toolbar">
-        <div class="filters" role="group" aria-label="Filtrar por deporte" data-i18n-aria-label="filterLabel">
-          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true" data-i18n="all">Todos</button>
-          <button type="button" class="filter" data-filter="training" aria-pressed="false">Training</button>
-          <button type="button" class="filter" data-filter="padel" aria-pressed="false">Pádel</button>
-          <button type="button" class="filter" data-filter="grappling" aria-pressed="false">Grappling</button>
-        </div>
-        <p class="product-count" id="product-count" role="status" aria-live="polite" aria-atomic="true"></p>
-      </div>
-      <div class="product-grid" id="product-grid"></div>
-      <noscript><p>Activa JavaScript para filtrar los diseños. Enable JavaScript to browse the collection.</p><a href="assets/images/original-01.jpg">Ver diseño León / View Lion design</a></noscript>
-    </section>
-
-    <section class="attitude-section" id="attitude" aria-labelledby="attitude-title">
-      <div class="attitude-inner shell">
-        <div class="attitude-emblem"><img src="assets/images/brand-mark.webp" width="240" height="240" loading="lazy" alt="Símbolo Stop Bullying: mano alzada" data-i18n-alt="emblemAlt"></div>
-        <div class="attitude-copy"><p class="eyebrow" data-i18n="attitudeEyebrow">LO QUE LLEVAS DENTRO</p><h2 id="attitude-title"><span data-i18n="attitudeLine1">MÁS FUERZA.</span><br><span class="accent" data-i18n="attitudeLine2">MÁS RESPETO.</span></h2><p data-i18n="attitudeDescription">Entrenar es superarte, no imponerte. Stopbullyn lleva esa actitud a cada diseño: carácter para ser tú y respeto por quien tienes al lado.</p><a class="text-link" href="#collection"><span data-i18n="findYours">Encuentra el tuyo</span><img class="icon" src="assets/icons/arrow-up-right.svg" width="20" height="20" alt=""></a></div>
-      </div>
-    </section>
-
-    <section class="questions section shell" id="questions" aria-labelledby="questions-title">
-      <div><p class="eyebrow" data-i18n="beforeYouGo">ANTES DE SEGUIR</p><h2 id="questions-title" data-i18n="questionsTitle">ASÍ DE FÁCIL.</h2></div>
-      <div class="faq-list">
-        <details><summary data-i18n="faq1q">¿Cómo veo todos los detalles de una prenda?</summary><p data-i18n="faq1a">Abre cualquier diseño de la colección. Puedes alternar entre el frontal y la espalda o ampliar la imagen original con ambas vistas.</p></details>
-        <details><summary data-i18n="faq2q">¿Puedo compartir un diseño?</summary><p data-i18n="faq2a">Sí. Dentro de cada diseño, pulsa «Compartir». Se abrirán las opciones de tu dispositivo o se copiará el enlace directo para enviarlo a quien quieras.</p></details>
-        <details><summary data-i18n="faq3q">¿Se puede comprar desde esta web?</summary><p data-i18n="faq3a">Por ahora, esta web presenta la colección. No acepta pedidos ni pagos. Aquí puedes descubrir y compartir tus diseños favoritos.</p></details>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="shell footer-inner"><a class="brand footer-brand" href="#top">STOPBULLYN<span class="brand-dot">.</span></a><p data-i18n="footerTagline">FUERZA PARA SER TÚ. RESPETO PARA TODOS.</p><a href="#top" class="back-top"><span data-i18n="backTop">Volver arriba</span><img class="icon" src="assets/icons/arrow-up-right.svg" width="18" height="18" alt=""></a></div></footer>
-
-  <dialog id="product-dialog" class="product-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-controls"><button class="icon-button dialog-close" id="dialog-close" type="button" aria-label="Cerrar diseño" data-i18n-aria-label="closeDesign"><img class="icon" src="assets/icons/x-lg.svg" width="20" height="20" alt=""></button></div>
-    <div class="dialog-shell">
-      <div class="dialog-visual"><div class="product-photo dialog-photo" id="dialog-photo"><img id="dialog-image" src="assets/images/original-01.jpg" width="1600" height="900" alt=""></div><div class="view-controls" role="group" aria-label="Vista de la prenda" data-i18n-aria-label="viewLabel"><button type="button" id="view-front" class="view-button is-active" aria-pressed="true" data-i18n="front">Frontal</button><button type="button" id="view-back" class="view-button" aria-pressed="false" data-i18n="back">Espalda</button><button type="button" id="view-both" class="view-button" aria-pressed="false"><img class="icon" src="assets/icons/zoom-in.svg" width="16" height="16" alt=""><span data-i18n="fullImage">Original</span></button></div></div>
-      <div class="dialog-info"><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p class="dialog-type" id="dialog-type"></p><p class="dialog-description" id="dialog-description"></p><p class="original-note" data-i18n="originalNote">Estás viendo el diseño original de la colección.</p><button class="button button-primary share-button" id="share-design" type="button"><span data-i18n="share">Compartir diseño</span><img src="assets/icons/share.svg" width="18" height="18" alt=""></button><a class="text-link original-link" id="open-original" href="assets/images/original-01.jpg" target="_blank" rel="noopener"><span data-i18n="openImage">Abrir imagen completa</span><img class="icon" src="assets/icons/arrow-up-right.svg" width="17" height="17" alt=""></a><div class="design-pager"><button class="pager-button" id="previous-design" type="button"><img class="icon" src="assets/icons/arrow-left.svg" width="20" height="20" alt=""><span data-i18n="previous">Anterior</span></button><span id="design-position"></span><button class="pager-button" id="next-design" type="button"><span data-i18n="next">Siguiente</span><img class="icon" src="assets/icons/arrow-right.svg" width="20" height="20" alt=""></button></div></div>
-    </div>
-  </dialog>
-  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <p>Stopbullying se ha mudado a <a href="https://demos.isuniverse.dev/stopbullying/">demos.isuniverse.dev/stopbullying/</a>.<br>
+  <span lang="en">Stopbullying has moved to <a href="https://demos.isuniverse.dev/stopbullying/?lang=en">demos.isuniverse.dev/stopbullying/</a>.</span></p>
 </body>
 </html>

@@ -1,4 +1,14 @@
-# Stopbullyn
+# Stopbullyn → Stopbullying
+
+> **Se ha mudado (08/11/2026).** La web vive ahora en **https://demos.isuniverse.dev/stopbullying/** (repositorio privado
+> `ismael-sarmiento/demos`, carpeta `public/stopbullying/`), con el nombre corregido: **Stopbullying**.
+> Este repositorio solo sirve `index.html` y `404.html`, que redirigen la dirección antigua
+> `isuniverse.dev/stopbullyn/` (y `ismael-sarmiento.github.io/stopbullyn/`) a la nueva, conservando `?lang` y `#diseño`.
+> No lo borres: hay enlaces compartidos que llegan aquí. La versión anterior queda en la historia de Git.
+
+---
+
+## Versión anterior (histórico)
 
 Web estática para presentar la colección de Sergio. HTML, CSS y JavaScript sin framework ni proceso de compilación. Español e inglés, claro y oscuro, catálogo filtrable, visor frontal/espalda, enlaces directos a diseños y efectos de profundidad con respeto a movimiento reducido.
 
